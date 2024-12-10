@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="main-heading">🎮 Press Any Key To Start the Game</h1>
+      <div>
+        <button class="green"></button>
+        <button class="red"></button>
+        <br />
+        <button class="yellow"></button>
+        <button class="blue"></button>
+        <audio id="mySound">
+          <source src="music.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <audio id="correct">
+          <source src="correct.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <audio id="wrong">
+          <source src="wrong.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="result">
+        <h1>Score</h1>
+        <h1 class="score"></h1>
+      </div>
+    </div>
+    <div id="myPopup" class="popup">
+      <p>🎮 Oops, you forgot the pattern!</p>
+      <p>💀 Game Over!</p>
+      <h1 style="color: beige">Your Score</h1>
+      <h1 class="pop-score">25</h1>
+
+      <button id="closePopup">Close</button>
+    </div>
+  </body>
+</html>
